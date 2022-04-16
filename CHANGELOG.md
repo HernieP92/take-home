@@ -10,10 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Service structure
 - POM Implementation
 - Cucumber Scenario definition
-- Test Runner.
+- Test Runner
 
 ## [0.0.1]
-
 ### Added
 
 - Git remote
