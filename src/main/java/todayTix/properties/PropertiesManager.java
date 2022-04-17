@@ -17,7 +17,7 @@ public class PropertiesManager {
         BASE_URL("BASE.URL");
 
         private final String value;
-        }
+    }
 
     @SneakyThrows
     /*This method is builded as part of the general structure of 1 automation project to manage envs ;D
@@ -25,13 +25,9 @@ public class PropertiesManager {
 
     public PropertiesManager(Properties prop) {
         this.prop = prop;
-        String env = System.getProperty("env", "qa");
 
-        if (env.equals("prod")) {
-            prop.load(new FileInputStream("src/main/resources/properties/configuration-pdn.properties"));
-        } else {
-            prop.load(new FileInputStream("src/main/resources/properties/configuration.properties"));
-        }
+        prop.load(new FileInputStream("src/main/resources/properties/configuration.properties"));
+
     }
 
     public String getProp(Property property) {

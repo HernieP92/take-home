@@ -1,0 +1,11 @@
+todayTix/properties/PropertiesManager.java
+ todayTix.properties.PropertiesManager
+ todayTix.properties.PropertiesManager$Property
+todayTix/properties/PropertiesFactory.java
+ todayTix.properties.PropertiesFactory
+todayTix/adapters/AutomatedBaseService.java
+ todayTix.adapters.AutomatedBaseService
+todayTix/adapters/AvailableTickets.java
+ todayTix.adapters.AvailableTickets
+todayTix/TestMain.java
+ todayTix.TestMain
