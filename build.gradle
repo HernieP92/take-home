@@ -3,6 +3,7 @@ plugins {
     id "io.freefair.lombok" version "5.3.3.3"
 }
 
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 
@@ -11,6 +12,7 @@ ext {
     httpcomponentsVersion = '4.5.13'
     log4jVersion = '2.12.1'
     cucumberVersion = '6.10.3'
+    testngVersion = '7.4.0'
 }
 
 repositories {
@@ -18,6 +20,20 @@ repositories {
 }
 
 dependencies {
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    implementation group: 'org.testng', name: 'testng', version: testngVersion
+
+    // Cucumber libraries
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: cucumberVersion
+    implementation group: 'io.cucumber', name: 'cucumber-core', version: cucumberVersion
+    implementation group: 'io.cucumber', name: 'cucumber-jvm', version: cucumberVersion, ext: 'pom'
+    implementation group: 'io.cucumber', name: 'cucumber-gherkin', version: cucumberVersion
+
+    // Report
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+    implementation group: 'tech.grasshopper', name: 'extentreports-cucumber6-adapter', version: '2.8.0'
 
     // Selenium libraries
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: seleniumVersion
@@ -30,16 +46,13 @@ dependencies {
 
     //  Library which allows to automate the management of the drivers (e.g. chromedriver, geckodriver, etc.) required by Selenium WebDriver
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.7.1'
-
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.28'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: log4jVersion
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
-
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: log4jVersion
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.12.3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
-
 
     // Rest client libraries
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.3.1'
@@ -47,46 +60,19 @@ dependencies {
     implementation group: 'org.apache.httpcomponents', name: 'httpmime', version: httpcomponentsVersion
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
 
-    // Cucumber libraries
-    implementation group: 'io.cucumber', name: 'cucumber-testng', version: cucumberVersion
-    implementation group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
-    implementation group: 'io.cucumber', name: 'cucumber-core', version: cucumberVersion
-    implementation group: 'io.cucumber', name: 'cucumber-jvm', version: cucumberVersion, ext: 'pom'
-    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.7'
-
-    implementation 'info.cukes:gherkin:2.12.2'
-
-
     // Dependency Injection
     implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: cucumberVersion
-
 
     // Better Assertions
     implementation group: 'org.assertj', name: 'assertj-core', version: '3.17.0'
 
-    // Awaitility is a DSL that allows you to express expectations of an asynchronous system in a concise and easy to read manner
-    implementation 'org.awaitility:awaitility:4.0.3'
-
     //  Generates fake data, It's useful when you're developing a new project and need some pretty data for showcase.
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
 
-    implementation group: 'io.cucumber', name: 'cucumber-testng', version: cucumberVersion
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
-
 test {
-    systemProperty "browser", System.getProperty("browser")
-    systemProperty "env", System.getProperty("env")
-    systemProperty "log4j2.debug", System.getProperty("log4j2.debug")
-    systemProperty "selenide.browser", System.getProperty("selenide.browser")
-    systemProperty "selenide.headless", System.getProperty("selenide.headless")
-    systemProperty "selenide.timeout", System.getProperty("selenide.timeout")
-    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
-
-
     useTestNG()
     scanForTestClasses = false
-    testLogging.showStandardStreams = true
-    useJUnitPlatform()
 }
+
+

@@ -8,6 +8,7 @@ import todayTix.adapters.AvailableTickets;
 public class ServiceDefinitions extends Definition {
     private final AvailableTickets availableTickets;
 
+
     public void requestAvailability(String quantity, String fromDate, String toDate, String headerValue) {
         execute("Consuming availability service", () -> {
             availableTickets.ticketsExist(quantity, fromDate, toDate, headerValue);
@@ -20,7 +21,15 @@ public class ServiceDefinitions extends Definition {
         });
     }
 
+    public void errorMessageValidation(String expectederrormessage) {
+        execute("Validating the error message", () -> {
+            availableTickets.errorMessageHandling(expectederrormessage);
+        });
+
+    }
+
     public void minPriceValidation() {
-        execute("Validation if the min price of all results for this product aren't null", availableTickets::minPriceValidations);
+        execute("Validation if the min price of all results for this product aren't null",
+                availableTickets::minPriceValidations);
     }
 }

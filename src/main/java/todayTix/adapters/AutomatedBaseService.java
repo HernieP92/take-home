@@ -35,8 +35,14 @@ public abstract class AutomatedBaseService {
         softAssert.assertAll();
     }
 
-    public void minPriceValidation() {
+    public void errorMessage(String expectederrormessage) {
+        ArrayList<String> errorMessage = globalResponse.jsonPath().get("context.errors.message");
+        softAssert.assertEquals(errorMessage.get(0), expectederrormessage);
+        softAssert.assertAll();
+    }
 
+
+    public void minPriceValidation() {
         try {
             ArrayList<Integer> minPrices = globalResponse.jsonPath().get("response.minPrice");
             for (int i = 0; i < minPrices.size(); i++) {

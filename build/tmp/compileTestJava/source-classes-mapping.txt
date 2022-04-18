@@ -1,2 +1,2 @@
-todayTix/TestRunner.java
- todayTix.TestRunner
+runners/TestRunner.java
+ runners.TestRunner

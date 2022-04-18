@@ -14,4 +14,9 @@ public class AvailableTickets extends AutomatedBaseService {
     public void minPriceValidations() {
         minPriceValidation();
     }
+
+    public void errorMessageHandling(String expectederrormessage) {
+        errorMessage(expectederrormessage);
+    }
+
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.TestRunner" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-04-18T18:46:36" hostname="DESKTOP-5DPNJBT" time="3.858">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="2.721"/>
+  <testcase name="runScenario[1](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.127"/>
+  <testcase name="runScenario[2](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.112"/>
+  <testcase name="runScenario[3](&quot;Consuming ticket service to validate dates errors&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.316"/>
+  <testcase name="runScenario[4](&quot;Consuming ticket service to validate dates errors&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.363"/>
+  <testcase name="runScenario[5](&quot;Consuming ticket service to validate empty header error handle&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.106"/>
+  <testcase name="runScenario[6](&quot;Consuming ticket service to validate empty header error handle&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunner" time="0.111"/>
+  <system-out><![CDATA[For the actual product there is no min price values
+For the actual product there is no min price values
+For the actual product there is no min price values
+For the actual product there is no min price values
+]]></system-out>
+  <system-err><![CDATA[ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+]]></system-err>
+</testsuite>

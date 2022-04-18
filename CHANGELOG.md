@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Log tool
 - mvp feature for services
 - Managers
+- Refactor dependencies
+- TestNG TestRunner class with cucumber
 
 # Types of changes
 
