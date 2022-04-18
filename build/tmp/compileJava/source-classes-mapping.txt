@@ -1,11 +1,29 @@
+todayTix/utils/managers/FileReaderManager.java
+ todayTix.utils.managers.FileReaderManager
 todayTix/properties/PropertiesManager.java
  todayTix.properties.PropertiesManager
  todayTix.properties.PropertiesManager$Property
 todayTix/properties/PropertiesFactory.java
  todayTix.properties.PropertiesFactory
-todayTix/adapters/AutomatedBaseService.java
- todayTix.adapters.AutomatedBaseService
-todayTix/adapters/AvailableTickets.java
- todayTix.adapters.AvailableTickets
+todayTix/definitions/Definition.java
+ todayTix.definitions.Definition
+todayTix/utils/DataGenerator.java
+ todayTix.utils.DataGenerator
+todayTix/utils/GeneralUtilities.java
+ todayTix.utils.GeneralUtilities
+todayTix/logs/Log.java
+ todayTix.logs.Log
+todayTix/utils/JsonUtils.java
+ todayTix.utils.JsonUtils
+todayTix/utils/managers/AssertionsManager.java
+ todayTix.utils.managers.AssertionsManager
 todayTix/TestMain.java
  todayTix.TestMain
+todayTix/adapters/AvailableTickets.java
+ todayTix.adapters.AvailableTickets
+todayTix/steps/ServiceSteps.java
+ todayTix.steps.ServiceSteps
+todayTix/adapters/AutomatedBaseService.java
+ todayTix.adapters.AutomatedBaseService
+todayTix/definitions/ServiceDefinitions.java
+ todayTix.definitions.ServiceDefinitions

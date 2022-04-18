@@ -2,7 +2,16 @@ package todayTix.adapters;
 
 public class AvailableTickets extends AutomatedBaseService {
 
-    public void ticketsExist() {
-        get("/1/from/20220418/to/20220425?param=5feb92a5-86a7-4f86-aaa0-9b90d63cbfee");
+    public void ticketsExist(String quantity, String fromDate, String toDate, String headerValue) {
+        get("/".concat(quantity).concat("/from/").concat(fromDate).concat("/to/").concat(toDate)
+                .concat("?param=5feb92a5-86a7-4f86-aaa0-9b90d63cbfee"), headerValue);
+    }
+
+    public void codeValidation(int statusExpected) {
+        statusCodeValidation(statusExpected);
+    }
+
+    public void minPriceValidations() {
+        minPriceValidation();
     }
 }

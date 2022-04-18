@@ -13,12 +13,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Test Runner
 
 ## [0.0.1]
+
 ### Added
 
 - Git remote
 - Changelog
 - Basic structure for project
 - Build.gradle file with extra stuff.
+- Service adapters
+- Definition for service
+- Log tool
+- mvp feature for services
+- Managers
 
 # Types of changes
 

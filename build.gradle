@@ -40,9 +40,6 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.12.3'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
 
-    // jSlack is a Java library to easily integrate your operations with Slack. The library currently supports the following APIs.
-    implementation group: 'com.github.seratch', name: 'jslack', version: '0.1.5'
-    implementation group: 'com.slack.api', name: 'slack-api-client', version: '1.6.0'
 
     // Rest client libraries
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.3.1'
