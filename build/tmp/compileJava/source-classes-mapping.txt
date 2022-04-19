@@ -2,8 +2,14 @@ todayTix/adapters/AvailableTickets.java
  todayTix.adapters.AvailableTickets
 todayTix/steps/ServiceSteps.java
  todayTix.steps.ServiceSteps
+todayTix/definitions/SelenideDefinitions.java
+ todayTix.definitions.SelenideDefinitions
+todayTix/pages/GetTicketsPage.java
+ todayTix.pages.GetTicketsPage
 todayTix/properties/PropertiesFactory.java
  todayTix.properties.PropertiesFactory
+todayTix/steps/SelenideSteps.java
+ todayTix.steps.SelenideSteps
 todayTix/definitions/Definition.java
  todayTix.definitions.Definition
 todayTix/adapters/AutomatedBaseService.java
@@ -16,6 +22,8 @@ todayTix/utils/JsonUtils.java
  todayTix.utils.JsonUtils
 todayTix/utils/managers/AssertionsManager.java
  todayTix.utils.managers.AssertionsManager
+todayTix/pages/HomePage.java
+ todayTix.pages.HomePage
 todayTix/properties/PropertiesManager.java
  todayTix.properties.PropertiesManager
  todayTix.properties.PropertiesManager$Property
@@ -23,7 +31,5 @@ todayTix/utils/GeneralUtilities.java
  todayTix.utils.GeneralUtilities
 todayTix/utils/DataGenerator.java
  todayTix.utils.DataGenerator
-todayTix/TestMain.java
- todayTix.TestMain
-todayTix/utils/managers/FileReaderManager.java
- todayTix.utils.managers.FileReaderManager
+todayTix/pages/ShowPage.java
+ todayTix.pages.ShowPage

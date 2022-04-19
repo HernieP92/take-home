@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.TestRunnerTask" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-04-19T03:27:05" hostname="DESKTOP-5DPNJBT" time="28.99">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="2.599"/>
+  <testcase name="runScenario[1](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.153"/>
+  <testcase name="runScenario[2](&quot;Consuming ticket service to validate correct behaviours&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.149"/>
+  <testcase name="runScenario[3](&quot;Consuming ticket service to validate dates errors&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.361"/>
+  <testcase name="runScenario[4](&quot;Consuming ticket service to validate dates errors&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.388"/>
+  <testcase name="runScenario[5](&quot;Consuming ticket service to validate empty header error handle&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.146"/>
+  <testcase name="runScenario[6](&quot;Consuming ticket service to validate empty header error handle&quot;, &quot;Optional[Service check for Home task]&quot;)" classname="runners.TestRunnerTask" time="0.145"/>
+  <testcase name="runScenario[7](&quot;Validating elements in the page across purchase flow&quot;, &quot;Optional[Task validation across front end]&quot;)" classname="runners.TestRunnerTask" time="25.047"/>
+  <system-out><![CDATA[For the actual product there is no min price values
+For the actual product there is no min price values
+For the actual product there is no min price values
+For the actual product there is no min price values
+]]></system-out>
+  <system-err><![CDATA[ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 25254
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr 18, 2022 10:27:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>

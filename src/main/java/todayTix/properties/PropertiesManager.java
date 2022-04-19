@@ -14,6 +14,7 @@ public class PropertiesManager {
     @AllArgsConstructor
     public enum Property {
         EVIDENCE_PATH("EVIDENCEPATH"),
+        TODAY_APP_URL("TODAY.APPURL"),
         BASE_URL("BASE.URL");
 
         private final String value;

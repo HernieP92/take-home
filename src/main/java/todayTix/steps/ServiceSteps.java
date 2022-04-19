@@ -4,14 +4,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import todayTix.definitions.SelenideDefinitions;
 import todayTix.definitions.ServiceDefinitions;
+
+
 
 public class ServiceSteps {
 
     private final ServiceDefinitions serviceDefinitions;
+    private final SelenideDefinitions selenideDefinitions;
 
-    public ServiceSteps(ServiceDefinitions serviceDefinitions) {
+    public ServiceSteps(ServiceDefinitions serviceDefinitions, SelenideDefinitions selenideDefinitions) {
         this.serviceDefinitions = serviceDefinitions;
+        this.selenideDefinitions = selenideDefinitions;
     }
 
 
@@ -34,4 +39,5 @@ public class ServiceSteps {
     public void i_make_sure_that_minprice_is_not_null() {
         serviceDefinitions.minPriceValidation();
     }
+
 }

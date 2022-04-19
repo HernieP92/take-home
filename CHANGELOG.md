@@ -7,11 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-- Service structure
-- POM Implementation
-- Cucumber Scenario definition
-- Test Runner
-
 ## [0.0.1]
 
 ### Added
@@ -27,6 +22,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Managers
 - Refactor dependencies
 - TestNG TestRunner class with cucumber
+- Front End Feature
+- Selenide steps and definitions
+- POM Implementation
+- BDD Scenarios for service and front end
 
 # Types of changes
 
