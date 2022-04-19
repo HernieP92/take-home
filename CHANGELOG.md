@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Selenide steps and definitions
 - POM Implementation
 - BDD Scenarios for service and front end
+- Merge with main branch from development
 
 # Types of changes
 
